@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=submit_lab_hpc-bio-pacioli-alumno21.sh
-#SBATCH --output=file_cut_parallel.out
-#SBATCH --error=file_cut_parallel.err
+#SBATCH --output=slurm-%j.out
+#SBATCH --error=slurm-%j.err
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=4G
